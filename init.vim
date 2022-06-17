@@ -10,11 +10,14 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 " Plugin Config
 source $HOME/.config/nvim/plug-config/nerdtree.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
+source $HOME/.config/nvim/plug-config/coc.vim
 
 " Themes
 " source $HOME/.config/nvim/themes/ayu.vim
 " source $HOME/.config/nvim/themes/nord.vim
-source $HOME/.config/nvim/themes/candle-grey.vim
+" source $HOME/.config/nvim/themes/candle-grey.vim
+" source $HOME/.config/nvim/themes/vacme.vim
+source $HOME/.config/nvim/themes/nofrils.vim
 source $HOME/.config/nvim/themes/airline.vim
 
 set foldlevelstart=20

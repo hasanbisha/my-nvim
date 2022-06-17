@@ -3,10 +3,11 @@ inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 
 " Use alt + hjkl to resize windows
-nnoremap <M-j>    :resize -2<CR>
-nnoremap <M-k>    :resize +2<CR>
-nnoremap <M-h>    :vertical resize -2<CR>
-nnoremap <M-l>    :vertical resize +2<CR>
+" this wont work cuz i use alt key with dwm :(
+" nnoremap <M-j>    :resize -2<CR>
+" nnoremap <M-k>    :resize +2<CR>
+" nnoremap <M-h>    :vertical resize -2<CR>
+" nnoremap <M-l>    :vertical resize +2<CR>
 
 " I hate escape more than anything else
 inoremap jk <Esc>
@@ -20,15 +21,20 @@ nnoremap <c-u> viwU<Esc>
 nnoremap <TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <S-TAB> :bprevious<CR>
-nnoremap <S-TAB> :bprevious<CR>
 nnoremap <Leader>d :Bd<CR>
 
 " Alternate way to save
-nnoremap <C-s> :w<CR>
+" nnoremap <C-s> :w<CR>
+nnoremap <Leader>s :w<CR>
 " Alternate way to quit
-nnoremap <C-Q> :wq!<CR>
+nnoremap <Leader>Q :wq!<CR>
+nnoremap <Leader>q :q<CR>
+
+nnoremap <Leader>- :split<CR>
+nnoremap <Leader>/ :vsplit<CR>
+
 " Use control-c instead of escape
-nnoremap <C-c> <Esc>
+nnoremap <Leader>c <Esc>
 " <TAB>: completion.
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
@@ -37,10 +43,14 @@ vnoremap < <gv
 vnoremap > >gv
 
 " Better window navigation
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+" nnoremap <C-h> <C-w>h
+" nnoremap <C-j> <C-w>j
+" nnoremap <C-k> <C-w>k
+" nnoremap <C-l> <C-w>l
+nnoremap <Leader>h <C-w>h
+nnoremap <Leader>j <C-w>j
+nnoremap <Leader>k <C-w>k
+nnoremap <Leader>l <C-w>l
 
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
